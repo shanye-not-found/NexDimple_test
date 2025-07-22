@@ -1,0 +1,73 @@
+        .chat-session-block {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin: 111px 20px 0px 0px;
+            width: 915px;
+            height: 882px;
+            border: 5px solid #FFFFFF;
+            border-radius: 10px;
+            background-color: #D9D9D900;  
+        }
+        /* .chat-session-block::before {
+            content: "";
+            position: absolute;
+            width: 404px;
+            height: 404px;
+            margin: 98px 255px 380px 256px;
+            background-image: url("./pictures/nexdimple.png");
+            background-size: cover;  
+            z-index: 1;
+        } */
+        .chat-session-block .input-block {
+            display: flex;
+            justify-content: space-evenly;
+            width: 915px;
+            height: 74px;
+            margin: 43px 0px 26px 0px;
+        }
+        .input-block .mac,
+        .message-box .profile-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 75px;
+            height: 75px;
+            background-color: #fff;
+            border-radius: 50%;
+            background-size: cover;
+            cursor: pointer;
+        }
+        .input-block .input-box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 770px;
+            height: 74px;
+            border-radius: 74px;
+            border: 5px solid #FFFFFF;
+            background-color: #FFFFFF00;
+        }
+        .input-box input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 41px;
+            border: none;
+            outline: none; 
+            background-color: transparent;
+            box-shadow: none;
+            color: #fff;
+        }
+
+        .send-btn {
+            width: 94px;
+            height: 45px;
+            border-radius: 45px;
+            background-color: #70C5DA;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+            color: #FFFFFF;
+        }

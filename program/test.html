@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dexie Test</title>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.min.js"></script>
+</head>
+<body>
+    <ul id="list"></ul>
+    <script>
+        const db = new Dexie('mydb');
+        db.version(1).stores({
+            folders: '++id,title'
+        });
+        db.folders.clear();
+        // 插入一条数据（只插一次，测试用）
+        db.folders.toArray().then(folders => {
+            if (folders.length === 0) {
+                console.log('插入数据');
+            }
+        });
+    </script>
+</body>
+</html>
+
+            // 从数据库里确定数据的数量，然后生成对应数量li，滚动条，溢出禁止，h182，把li做成input，在点击时变成编辑模式,在此处只要获得name
+            // 那么存数据应该是一个json对象，我在点击单个li时应该获取数据库，并把它加载到对话框里，那么这个功能怎么实现
+            
+
+
+
+
+
+
+
+
+        // 点击时自动记录当前对话框内容并存入数据库，清空对话框，并且加载数据库的对话框信息，并且滚动条到底部
+        // 数据库还应记录最后修改的时间，在每次点击调用过后自动检查时间戳更新位置
+
+        // else we need 
+        // 在关闭网页时自动记录页面信息
+        // 在开启网页时更新数据库，分类不同时间的信息
+
+
+
+
+
+        const targetFolder= await db.folders.where("title").equals(getTitle).first();
+            const folderId = targetFolder.id;
+            const cardId = $(this).closest(".card-item").id;
+            await db.cards.update(cardId, {mark : 1});
+            $(this).html(`<i class="fas fa-bookmark" style="font-size: 24px; color: #FFC107;"></i>`);
+            const Cards1 = await db.cards.where("folderId").equals(folderId).where("mark").equals(1).toArray();
+            const Cards2 = await db.cards.where("folderId").equals(folderId).where("mark").equals(0).toArray();
+            targetCards=Cards1.concat(Cards2);
+            createCards(targetCards);   

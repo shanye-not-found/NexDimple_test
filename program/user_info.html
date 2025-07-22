@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.css" rel="stylesheet">
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./card_folder.css">
+    <link rel="stylesheet" href="./card_header.css">
+    <link rel="stylesheet" href="./card_modal.css">
+    <link rel="stylesheet" href="./card_body.css">
+</head>
+<body>
+    <!-- 主体 -->
+    <div class="desktop">
+        <div class="folder-session">
+            <div class="folder-header">
+                <p>Folders</p>
+                <hr style="height: 2px; color:#ACA7A7">
+            </div>
+            <ul class="folder-body" id="folder-body"></ul>
+        </div>
+        <div class="card-session">
+            <div class="card-header" id="card-header">
+               <div class="default-message">Please select a folder</div> 
+            </div>
+            <ul class="card-body" id="card-body"></ul>            
+        </div>
+    </div>
+    <!-- 模态框 -->
+    <div class="card-modal" id="card-modal">
+        <div class="modal-header">
+            <p>Create a New Character Card</p>
+            <hr style="height: 2px; color:#ACA7A7">
+        </div>
+        <div class="modal-body">
+            <div class="user-name">
+                <span class="text">Name:</span>
+                <input type="text" placeholder="Enter the name">
+            </div>
+            <div class="user-relation">
+                <span class="text">Relationship:</span>
+                <input type="text" placeholder="Enter the relationship between you">
+            </div>
+            <div class="user-tags">
+                <span class="text">Tag:</span>
+                <input type="text" placeholder="Enter tags, separated by comma">
+            </div>
+            <div class="user-intro">
+                <span class="text">Introduction:</span>
+                <textarea placeholder="Enter a brief description of the character"></textarea>
+            </div>
+        </div>
+        <div class="modal-event">
+            <div class="voice-btn">
+                <i class="fas fa-wifi" style="font-size: 32px; color: #000; transform: rotate(90deg);"></i>
+                <span class="text">import character's voice</span>
+            </div>
+            <div class="cancel-btn"><span class="text">Cancel</span></div>
+            <div class="save-btn"><span class="text">Save</span></div>
+        </div>
+    </div>
+    <!-- 蒙版 -->
+    <div class="modal-mask" id="modal-mask"></div>
+
+    <script src="./data_base.js"></script>
+    <script src="./card_folder.js"></script>
+    <script src="./card_main.js"></script>
+    <script src="./card_event.js"></script>
+</body>
+</html>

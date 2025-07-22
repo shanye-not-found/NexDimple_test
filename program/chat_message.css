@@ -1,0 +1,72 @@
+.chat-session-block .messages-block {
+    display: flex;
+    flex-direction: column;
+    height: 737px;
+    width: 915px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.messages-block .user-message-box,
+.messages-block .bot-message-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 915px;
+    height: auto;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+.user-message-box .user-message{
+    width: 618px;
+    height: auto;
+    margin-left: 132px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #E6C7EB;
+    border-radius: 8px;
+}
+.bot-message-box .bot-message{
+    width: 618px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-right: 132px;
+    background-color: #FFFCFC;
+    border-radius: 8px;
+}
+.message-text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    word-break: break-all;
+}
+.user-message-box .event-session,
+.bot-message-box .event-session {
+    display: flex;
+    margin-left: 35px;
+    width: 618px;
+    height: 30px;
+}
+.event-session .trash-btn,
+.event-session .refresh-btn,
+.event-session .copy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 26px;
+    height: 26px;
+    background-color: #E6C7EB00;
+    cursor: pointer;
+}
+.event-session .bot-buttons-position{
+    display: flex;
+    margin-left: 440px;
+    width: 138px;
+    height: auto;
+}
+.user-buttons-position{
+    display: flex;
+    width: 138px;
+    height: auto;
+}

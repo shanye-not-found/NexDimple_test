@@ -1,0 +1,70 @@
+.folder-session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 111px 22px 31px 25px;
+    width: 232px;
+    height: 882px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 4px 6px 6px 0px rgba(243, 243, 243, 0.25);
+}
+.folder-session .folder-header {
+    width: 189px;
+    height: 45px;
+    margin-top: 17px;
+}
+.folder-header p{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;            
+    color: #000; 
+}
+.folder-session .folder-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 232px;
+    height: 794px;
+    margin-top: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.folder-body li .folder-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 154px;
+    background-image: url("./pictures/NEX.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    padding: 38px 10px 0px 10px;   
+    margin-bottom: 25px;
+    overflow: hidden;
+    word-break: break-all;
+    cursor: pointer;
+}
+.folder-input{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 700;
+    line-height: 110%; 
+    
+}
+.folder-title input{
+    border: none;
+    outline: none; 
+    background-color: transparent;
+}

@@ -1,0 +1,85 @@
+.user-info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 111px 28px 31px 20px;
+    width: 457px;
+    height: 882px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.user-info-block .info-header p {
+    display: block;
+    width: 381px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+}
+.user-info-block .info-header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.user-info-block .info-session {
+    margin-top: 17px;
+    margin-bottom: 48px;
+    width: 381px;
+    height: 741px;
+}
+.user-info-block .info-session ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 381px;
+    height: 741px;
+
+}
+.card-box {
+    display: flex;
+    align-items: center;
+    width: 381px;
+    height: 133px;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+}
+.card-box:hover {
+    background-color: #ADADAD;
+}
+.card-box:active {
+    background-color: #70C5DA;
+}
+.card-box .card-image {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    margin: 20px 25px;
+
+}
+.card-box .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 27px, 47px,41px ,4px;
+    width: 187px;
+    height: 65px;
+}
+.card-content .card-name{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #000000;
+}
+.card-box .card-message-box {
+    width: 187px;
+    height: auto;
+    overflow: hidden;
+}
+.card-content .card-message{
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #605D5D;
+}
