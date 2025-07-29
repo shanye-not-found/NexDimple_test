@@ -14,20 +14,21 @@ const createCards =async function(cards){
         </div>
         <ul class="tag-block" ></ul>
         <div class="event-block">
-            <div class="data-btn">
+            <a class="data-btn" href="./personal_data.html?id=${card.id}" target="_blank">
                 <span><i class="fas fa-user" style="font-size: 16px;color: #757575;"></i></span>
                 <p>Personal Data</p>
-            </div>
-            <div class="bot-btn">
+            </a>
+            <a class="bot-btn" href="./chatbot.html?id=${card.id}" target="_blank">
                 <span><i class="fa fa-desktop" style="font-size: 16px;color: #757575;"></i></span>
                 <p>ChatBot</p>
-            </div>
+            </a>
         </div>
         `;
         cardBody.appendChild(li);
         const tagBlock = li.querySelector(".tag-block");
-        if (card.tags.length > 1){
+        if (card.tags.length > 0){
             card.tags.forEach(tag => {
+                if (tag === "") return;
                 const createTag = document.createElement("li");
                 createTag.classList.add("tag");
                 createTag.innerHTML = tag;
@@ -90,6 +91,7 @@ const closeModal = function(){
     mask.style.display = "none"
     $(".modal-body .user-name input").val("");
     $(".modal-body .user-relation input").val("");
+    $(".modal-body .user-occupation input").val("");
     $(".modal-body .user-tags input").val("");
     $(".modal-body textarea").val("");
 }
@@ -100,6 +102,7 @@ $(".card-body").on("click",".card-add",function(){
 $(".save-btn").on("click", async function(){
     const name = $(".modal-body .user-name input").val();
     const relationship = $(".modal-body .user-relation input").val();
+    const occupation = $(".modal-body .user-occupation input").val();
     const tags = $(".modal-body .user-tags input").val();
     const introduction = $(".modal-body textarea").val();
     const getTitle = $("#current-title").text();
@@ -108,7 +111,8 @@ $(".save-btn").on("click", async function(){
     const card = {
         name,
         relationship,
-        tags: tags.split(",").map(t => t.trim()),
+        occupation,
+        tags: tags.split(",").map(t => t.trim()).filter(t => t !== ""),
         introduction,
         folderId
     };

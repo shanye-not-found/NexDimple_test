@@ -53,11 +53,6 @@ $(".card-header").on("click", ".trash-btn", async function(){
         `);
     };
 });
-// chatbot-btn
-$(".card-body").on("click",".bot-btn",function(){
-    window.open("./chatbot.html","_blank")
-});
-
 //filter-session
 let targetCards = [];
 const searchFunc =async function(){
@@ -97,7 +92,7 @@ $(".card-body").on("click", ".mark-btn", async function(){
     if($(".folder-title").length > 0){
         if(card){
             const newMark = card.mark === 1 ? 0 : 1;
-            await db.cards.update(card.id, {mark: newMark});
+            await db.ate(card.id, {mark: newMark});
             targetCards=await db.cards.where("folderId").equals(folderId).toArray();
             targetCards.sort((a, b) => (b.mark === 1 ? 1 : 0) - (a.mark === 1 ? 1 : 0));
             createCards(targetCards);   

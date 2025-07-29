@@ -1,0 +1,77 @@
+.img-bg-session {
+    position: absolute;
+    width: 1440px;
+    height: 748px;
+    top: 715px;
+    background-image: url(./pictures/Group\ 46.svg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.img-session {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 594px;
+    padding: 77px 45px;
+    z-index: 2;
+}
+.img-session .img-add-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 440px;
+    margin-right: 25px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.img-add-btn .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130.5px 0px 33px 0px;
+    width: 90px;
+    height: 90px;
+}
+.img-add-btn .text {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+}
+.img-list{
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 440px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.img-list .img-item {
+    width: 330px;
+    height: 440px;
+    margin-right: 25px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin: 0px 26px;
+    flex-shrink: 0;
+}
+.img-item img {
+    width: 330px;
+    height: 440px;
+    object-fit: contain;
+}
+.img-arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 1087px;
+    left: 1312px;
+}

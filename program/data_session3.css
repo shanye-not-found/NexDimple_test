@@ -1,0 +1,133 @@
+.relevant-schedule {
+    display: flex;
+    flex-direction: column;
+    width: 1395px;
+    height: 748px;
+    padding: 0px 61.5px;
+    background-color: #fff;
+    border-radius: 10px;
+    clip-path: polygon(
+        0 77px,
+        425px 77px,
+        470px 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+    z-index: 2;
+}
+.img-text-session2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    left: 100px;
+    top: 1421px;
+}
+.rotate2 {
+    transform: rotate(225deg);
+}
+.relevant-schedule .default-text {
+    width: 708px;
+    height: 90px;
+    color: #11102E;
+    text-align: right;
+    font-family: "Jockey One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 89.6px */
+    letter-spacing: 3.2px;
+    margin: 9px 65px 23px 560px;
+}
+.relevant-schedule .schedule-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1272px;
+    height: 512px;
+    padding: 0px 65px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.overdue{
+    background-color: #D9D9D9;
+}
+.upcoming{
+    background: #CEEEFB;
+}
+.schedule-list .schedule-item {
+    display: flex;
+    align-items: center;
+    width: 1265px;
+    height: 88px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    margin-bottom: 14px;
+}
+.schedule-item .event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px 30px;
+    cursor: pointer;
+}
+.schedule-item .date-block{
+    width: 170px;
+    height: 45px;
+    margin-right: 35px;
+    overflow: hidden;
+}
+.schedule-item .time-block{
+    width: 200px;
+    height: 45px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+.schedule-item .content-block{
+    width: 440px;
+    height: 45px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+.schedule-item .remind-block{
+    width: 220px;
+    height: 45px;
+    overflow: hidden;
+}
+.schedule-item p{
+    color: #535353;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%; /* 44.8px */
+    letter-spacing: 1.6px;
+}
+.relevant-schedule .event-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    width: 1265px;
+    height: 63px;
+    padding-right: 670px;
+}
+.event-block .schedule-add-btn,
+.event-block .schedule-edit-btn,
+.event-block .schedule-finish-btn {
+    width: auto;
+    height: 63px;
+    border: 4px solid rgba(0, 0, 0, 0.12);;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.00);
+    padding: 14px 30px;
+    color: #757575;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%; /* 35.2px */
+    cursor: pointer;
+}

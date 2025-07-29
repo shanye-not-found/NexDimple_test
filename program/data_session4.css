@@ -1,0 +1,135 @@
+.memories-session{
+    display: flex;
+    flex-direction: column;
+    width: 1395px;
+    height: 894px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 -10px 10px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 134px;
+    padding: 0px 61.5px;
+}
+.memories-session .default-text{
+    width: 587px;
+    height: 90px;
+    margin: 11.5px 0px;
+    color: #11102E;
+    font-family: "Jockey One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 89.6px */
+    letter-spacing: 3.2px;
+}
+.memories-session .memories-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1272px;
+    height: 644px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: #FCECFF;
+    margin-bottom: 31px;
+    padding: 0px 50px 44px 38px;
+}
+.memories-session .memories-add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1272px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 3px dashed #87688A;
+    background: rgba(252, 236, 255, 0.40);
+}
+.memories-add-btn .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.memories-add-btn .text{
+    width: 300px;
+    height: 50px;
+    color: #87688A;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%; /* 50.4px */
+    letter-spacing: 1.8px;
+}
+.memories-block .memories-item{
+    display: flex;
+    flex-direction: column;
+    width: 1184px;
+    height: 100px;
+}
+.memories-item .memory-content,
+.memories-item .empty-placeholder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1184px;
+    height: 97px;
+}
+.memory-content .memory-text{
+    width: 1022px;
+    height: 57px;
+    flex-shrink: 0;
+    margin: 40px 20px 0px 20px;
+    color: #87688A;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%; /* 50.4px */
+    letter-spacing: 1.8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.memory-content .memory-edit-btn,
+.memory-content .memory-delete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.memory-input{
+    width: 1144px;
+    height: 57px;
+    margin: 40px 20px 0px 20px;
+    border: none;
+    outline: none; 
+    background-color: transparent;
+    box-shadow: none;
+    color: #87688A;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%; /* 50.4px */
+    letter-spacing: 1.8px;
+}
+.memory-tooltip {
+    position: absolute;
+    border-radius: 5px;
+    border: 2px solid #535353;
+    background: #FFF;
+    color: #87688A;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 140%; /* 50.4px */
+    letter-spacing: 1.8px;
+    padding: 6px 14px;
+    z-index: 999;
+    white-space: normal;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    pointer-events: none;   /* 让tooltip不干扰鼠标 */
+    max-width: 1046px;       /* 防止气泡太宽 */
+    word-break: break-all;
+}

@@ -1,0 +1,102 @@
+.schedule-modal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 960px;
+    height: 506px;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+.schedule-modal .modal-header{
+    display: flex;
+    flex-direction: column;
+    width: 875px;
+    height: auto;
+    margin-top: 18px;
+}
+.schedule-modal .modal-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 875px;
+    height: 434px;
+}
+.modal-body .date{
+    display: flex;
+    align-items: center;
+    width: 835px;
+    height: 74px;
+    border-radius: 10px;
+    border: 3px solid #555;
+    background: rgba(217, 217, 217, 0.00);
+}
+.modal-body .text{
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px 25px;
+}
+.modal-body .block2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 835px;
+    height: 74px;
+}
+.block2 .start-time,
+.block2 .end-time{
+    display: flex;
+    align-items: center;
+    width: 404px;
+    height: 74px;
+    border-radius: 10px;
+    border: 3px solid #555;
+    background: rgba(217, 217, 217, 0.00);
+}
+.date input{
+    width: 700px;
+    height: 74px;
+    font-size: 32px;
+}
+.start-time input,
+.end-time input{
+    width: 185px;
+    height: 74px;
+    font-size: 32px;
+}
+.modal-body .content{
+    display: flex;
+    width: 835px;
+    height: 124px;
+    padding-top: 18px;
+    border-radius: 10px;
+    border: 3px solid #555;
+    background: rgba(217, 217, 217, 0.00);
+}
+.schedule-modal-event{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 875px;
+    height: 61px;
+    margin-bottom: 31px;
+    padding-left: 521px;
+}
+.schedule-modal-event .text{
+    color: #555;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    width: auto;
+    height: auto;
+}
